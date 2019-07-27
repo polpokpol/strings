@@ -95,6 +95,8 @@ class StringOperations {
         }
 
         return lrs;
+        // https://www.coursera.org/lecture/cs-algorithms-theory-machines/longest-repeated-substring-hkJBt
+        // at 10:19
 
     }
 
