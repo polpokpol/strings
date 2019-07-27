@@ -81,13 +81,13 @@ class StringOperations {
         int N = text.length();
         String[] suffixes = new String[N];
         for (int i = 0; i < N; i++) {
-            suffixes[i] = text.substring(i, N);
+            suffixes[i] = text.substring(i, N); // first form a substring
         }
 
-        Arrays.sort(suffixes);
+        Arrays.sort(suffixes); // second sort them
 
         String lrs = "";
-        for (int i = 0; i < N-1; i++) {
+        for (int i = 0; i < N-1; i++) { // find the longest LCP among adjacent entries
             String temp = longestCommonPrefix(suffixes[i], suffixes[i+1]);
             if(temp.length() > lrs.length()){
                 lrs = temp;
